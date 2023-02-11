@@ -1,0 +1,50 @@
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Website NAVBAR STYLING */
+.Container {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1d1d1d;
+    padding: 0 0.4rem;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 5%;
+    box-shadow: 0 0 10px #202020;
+}
+
+.Container::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -2.5%;
+    width: 105%;
+    height: 112%;
+    border-radius: 20px;
+    background: linear-gradient(to right, #272727, #2a2a2a);
+    z-index: -1;
+    transition: background 4s;
+}
+
+.Container:hover::before { background: linear-gradient(to right, #9d50bb, #6e48aa); }
+.Box {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.Box:hover { transform: translateY(-10px); background: linear-gradient(to right, #9d50bb, #6e48aa); }
+    { cursor: pointer; transition: transform 0.4s }
+.Box:hover { transform: scale(1.5); }
